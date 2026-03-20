@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "title": "Physis - Gestão de Studios | CTN Dev BR"
+  },
+  "lang": {
+    "ptbr": "PTBr",
+    "en": "EN"
+  },
+  "nav": {
+    "home": "Home",
+    "features": "Funcionalidades",
+    "studentApp": "App Aluno",
+    "support": "Suporte",
+    "demoBtn": "Agendar Demonstração"
+  },
+  "hero": {
+    "badge": "SISTEMA DE GESTÃO ESPECIALIZADO",
+    "title": "Physis: <span class=\"text-primary\">Eficiência</span> que gera <span class=\"text-primary\">Liberdade</span>",
+    "desc": "Gerencie seu studio com eficiência e conquiste a liberdade de tempo que você merece. A arquitetura digital completa para elevar o nível do seu negócio.",
+    "ctaPrimary": "Começar Agora",
+    "ctaSecondary": "Solicitar Demo"
+  },
+  "time": {
+    "title": "Economia de <span class=\"text-primary\">Tempo Real</span>",
+    "desc": "Automatizamos as tarefas burocráticas para que você foque no que realmente importa: seus alunos.",
+    "card1": {
+      "title": "Agilidade Operacional",
+      "desc": "Reduza em até 70% o tempo gasto com agendamentos e cobranças manuais."
+    },
+    "card2": {
+      "title": "Rotina Simplificada",
+      "desc": "Acesso rápido a todas as informações críticas em poucos cliques, de qualquer lugar."
+    }
+  },
+  "studentApp": {
+    "badge": "VALOR CENTRAL",
+    "title": "Seu Studio no <span class=\"text-primary-fixed\">Bolso do Aluno</span>",
+    "desc": "Nossa maior força é a experiência do seu cliente. Um aplicativo nativo, rápido e intuitivo que fideliza e moderniza sua marca.",
+    "card1": {
+      "title": "Agendamento em Segundos",
+      "desc": "Seus alunos marcam, desmarcam e repõe aulas sem precisar enviar uma única mensagem no WhatsApp."
+    },
+    "card2": {
+      "title": "Transparência Financeira",
+      "desc": "Histórico de mensalidades e faturas sempre disponíveis para consulta rápida do aluno."
+    },
+    "card3": {
+      "title": "Engajamento com Push",
+      "desc": "Notificações automáticas de horários e avisos que reduzem as faltas e aumentam a presença."
+    },
+    "store1": "App Store<br /><span class=\"text-white text-sm\">Disponível</span>",
+    "store2": "Google Play<br /><span class=\"text-white text-sm\">Disponível</span>",
+    "screen1": "Interface Moderna",
+    "screen2": "Consultas Futuras",
+    "screen3": "Agendamentos",
+    "screen4": "Reposições",
+    "screen5": "Minhas Faturas"
+  },
+  "management": {
+    "title": "Engenharia de <span class=\"text-primary\">Gestão</span>",
+    "desc": "Funcionalidades desenhadas para a máxima performance do seu studio.",
+    "card1": {
+      "title": "Dashboard Inteligente",
+      "desc": "Visão 360° em tempo real. Indicadores de performance e faturamento que facilitam decisões estratégicas."
+    },
+    "card2": {
+      "title": "Agenda Dinâmica",
+      "desc": "Controle absoluto de horários e turmas. Sincronização inteligente que elimina conflitos de agenda."
+    },
+    "card3": {
+      "title": "Gestão Financeira",
+      "desc": "Lançamentos automáticos, gestão de mensalidades e fluxo de caixa detalhado para sua paz mental."
+    }
+  },
+  "support": {
+    "title": "Suporte <span class=\"text-primary-fixed\">Humanizado</span>",
+    "desc": "Você não é apenas mais um número de ticket. Nossa equipe de especialistas conhece seu negócio e está pronta para ajudar via WhatsApp ou reunião rápida sempre que precisar.",
+    "item1": "Chat Direto com Especialistas",
+    "item2": "Resposta Rápida e Assertiva",
+    "chip": "Seu sucesso é o nosso"
+  },
+  "evolution": {
+    "badge": "EVOLUÇÃO CONSTANTE",
+    "title": "Sua voz importa: <span class=\"text-primary\">Evolua conosco</span>",
+    "desc": "Acreditamos que quem usa o sistema sabe o que ele precisa. No Physis, você tem canal aberto para sugerir melhorias e novas funcionalidades.",
+    "quoteTitle": "Co-criação",
+    "quote": "\"Muitas de nossas melhores ferramentas nasceram de sugestões diretas de nossos parceiros. Sugira melhorias e veja o sistema evoluir para atender suas necessidades específicas.\""
+  },
+  "responsive": {
+    "chip": "Acesso via Web",
+    "badge": "GERENCIAMENTO TOTAL",
+    "title": "Sistema <span class=\"text-primary\">100% Responsivo</span>",
+    "desc": "Não é apenas um app para alunos, é todo o poder da gestão na palma da sua mão. Nossa interface web se adapta perfeitamente a qualquer dispositivo, oferecendo fluidez total sem necessidade de downloads para o gestor.",
+    "item1": {
+      "title": "Acesso via Navegador",
+      "desc": "Entre pelo Chrome ou Safari com a mesma conta."
+    },
+    "item2": {
+      "title": "Sincronia Total",
+      "desc": "Dados atualizados instantaneamente em todos os aparelhos."
+    }
+  },
+  "integrations": {
+    "title": "Expanda seu Alcance com <span class=\"text-primary-fixed\">Integrações</span>",
+    "desc": "Conecte seu studio aos maiores players do mercado de saúde corporativa. O Physis integra-se perfeitamente para automatizar a entrada de novos alunos e simplificar o repasse financeiro.",
+    "partner1": "Parceiro Oficial",
+    "partner2": "Ecossistema Ativo",
+    "card1": {
+      "title": "Check-in Automático",
+      "desc": "Sincronização instantânea com as plataformas corporativas."
+    },
+    "card2": {
+      "title": "Novos leads",
+      "desc": "Atraia funcionários de grandes empresas parceiras."
+    },
+    "card3": {
+      "title": "Repasse Simplificado",
+      "desc": "Controle financeiro integrado dos subsídios corporativos."
+    },
+    "card4": {
+      "title": "Escalabilidade",
+      "desc": "Aumente sua taxa de ocupação sem esforço manual."
+    }
+  },
+  "cta": {
+    "title": "Pronto para ter mais tempo e uma gestão de excelência?",
+    "desc": "Junte-se a centenas de profissionais que já transformaram seu dia a dia com o Physis.",
+    "button1": "Testar Grátis Agora",
+    "button2": "Falar com Consultor"
+  }
+}

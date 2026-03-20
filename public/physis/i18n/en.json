@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "title": "Physis - Studio Management | CTN Dev BR"
+  },
+  "lang": {
+    "ptbr": "PTBr",
+    "en": "EN"
+  },
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "studentApp": "Student App",
+    "support": "Support",
+    "demoBtn": "Schedule Demo"
+  },
+  "hero": {
+    "badge": "SPECIALIZED MANAGEMENT SYSTEM",
+    "title": "Physis: <span class=\"text-primary\">Efficiency</span> that creates <span class=\"text-primary\">Freedom</span>",
+    "desc": "Manage your studio efficiently and gain the time freedom you deserve. The complete digital architecture to elevate your business.",
+    "ctaPrimary": "Get Started",
+    "ctaSecondary": "Request Demo"
+  },
+  "time": {
+    "title": "Real <span class=\"text-primary\">Time Savings</span>",
+    "desc": "We automate bureaucratic tasks so you can focus on what really matters: your students.",
+    "card1": {
+      "title": "Operational Agility",
+      "desc": "Reduce by up to 70% the time spent on scheduling and manual billing."
+    },
+    "card2": {
+      "title": "Simplified Routine",
+      "desc": "Fast access to all critical information in just a few clicks, from anywhere."
+    }
+  },
+  "studentApp": {
+    "badge": "CORE VALUE",
+    "title": "Your Studio in the <span class=\"text-primary-fixed\">Student's Pocket</span>",
+    "desc": "Our biggest strength is your client experience. A native, fast and intuitive app that builds loyalty and modernizes your brand.",
+    "card1": {
+      "title": "Scheduling in Seconds",
+      "desc": "Your students can book, cancel and reschedule classes without sending a single WhatsApp message."
+    },
+    "card2": {
+      "title": "Financial Transparency",
+      "desc": "Tuition and invoice history always available for quick student access."
+    },
+    "card3": {
+      "title": "Push Engagement",
+      "desc": "Automatic reminders and updates that reduce absences and increase attendance."
+    },
+    "store1": "App Store<br /><span class=\"text-white text-sm\">Available</span>",
+    "store2": "Google Play<br /><span class=\"text-white text-sm\">Available</span>",
+    "screen1": "Modern Interface",
+    "screen2": "Upcoming Sessions",
+    "screen3": "Bookings",
+    "screen4": "Make-up Classes",
+    "screen5": "My Invoices"
+  },
+  "management": {
+    "title": "Management <span class=\"text-primary\">Engineering</span>",
+    "desc": "Features designed for your studio's maximum performance.",
+    "card1": {
+      "title": "Smart Dashboard",
+      "desc": "Real-time 360° view. Performance and revenue indicators that support strategic decisions."
+    },
+    "card2": {
+      "title": "Dynamic Schedule",
+      "desc": "Full control of timetables and classes. Smart sync that eliminates scheduling conflicts."
+    },
+    "card3": {
+      "title": "Financial Management",
+      "desc": "Automatic entries, tuition control and detailed cash flow for your peace of mind."
+    }
+  },
+  "support": {
+    "title": "<span class=\"text-primary-fixed\">Human</span> Support",
+    "desc": "You are not just another ticket number. Our specialist team understands your business and is ready to help via WhatsApp or quick meetings whenever needed.",
+    "item1": "Direct Chat with Specialists",
+    "item2": "Fast and Assertive Response",
+    "chip": "Your success is ours"
+  },
+  "evolution": {
+    "badge": "CONTINUOUS EVOLUTION",
+    "title": "Your voice matters: <span class=\"text-primary\">Evolve with us</span>",
+    "desc": "We believe users know what the system needs. In Physis, you have an open channel to suggest improvements and new features.",
+    "quoteTitle": "Co-creation",
+    "quote": "\"Many of our best tools were born from direct partner suggestions. Propose improvements and see the system evolve to your specific needs.\""
+  },
+  "responsive": {
+    "chip": "Web Access",
+    "badge": "TOTAL MANAGEMENT",
+    "title": "<span class=\"text-primary\">100% Responsive</span> System",
+    "desc": "It's not just an app for students—it's full management power in your hand. Our web interface adapts perfectly to any device, delivering fluid experience without downloads for managers.",
+    "item1": {
+      "title": "Browser Access",
+      "desc": "Access via Chrome or Safari with the same account."
+    },
+    "item2": {
+      "title": "Total Sync",
+      "desc": "Data updated instantly across all devices."
+    }
+  },
+  "integrations": {
+    "title": "Expand Your Reach with <span class=\"text-primary-fixed\">Integrations</span>",
+    "desc": "Connect your studio to major corporate wellness players. Physis integrates seamlessly to automate new student intake and simplify financial transfers.",
+    "partner1": "Official Partner",
+    "partner2": "Active Ecosystem",
+    "card1": {
+      "title": "Automatic Check-in",
+      "desc": "Instant sync with corporate platforms."
+    },
+    "card2": {
+      "title": "New Leads",
+      "desc": "Attract employees from major partner companies."
+    },
+    "card3": {
+      "title": "Simplified Transfers",
+      "desc": "Integrated financial control of corporate subsidies."
+    },
+    "card4": {
+      "title": "Scalability",
+      "desc": "Increase occupancy rate without manual effort."
+    }
+  },
+  "cta": {
+    "title": "Ready for more time and management excellence?",
+    "desc": "Join hundreds of professionals who have already transformed their daily routine with Physis.",
+    "button1": "Start Free Now",
+    "button2": "Talk to a Consultant"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "title": "CTN Dev BR | Soluções em Tecnologia",
+    "description": "CTN Dev BR - Desenvolvimento de sistemas, aplicativos e plataformas de gestão. Soluções tecnológicas eficientes para empresas.",
+    "ogDescription": "Desenvolvimento de sistemas, aplicativos e plataformas de gestão com foco em resultado."
+  },
+  "lang": {
+    "ptbr": "PTBr",
+    "en": "EN"
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Serviços",
+    "physis": "Physis",
+    "contact": "Contato",
+    "talk": "Vamos conversar"
+  },
+  "hero": {
+    "title": "Soluções em Tecnologia para seu <span class=\"text-primary\">Negócio</span>",
+    "subtitle": "Desenvolvimento de sistemas, aplicativos e gestão com foco em resultado. Transformamos complexidade em simplicidade digital.",
+    "ctaPrimary": "Vamos conversar",
+    "ctaSecondary": "Conhecer Physis"
+  },
+  "about": {
+    "label": "A Empresa",
+    "title": "Sobre a CTN Dev BR",
+    "p1": "Somos especialistas em desenvolvimento e manutenção de sistemas, aplicativos e plataformas de gestão.",
+    "p2": "Nossa missão é oferecer soluções tecnológicas eficientes e personalizadas para alavancar o seu negócio, unindo design estratégico e engenharia de ponta.",
+    "stat1": "Personalizado",
+    "stat2": "Suporte",
+    "card1": "Inovação em cada linha de código",
+    "card2": "Foco em Resultados Reais"
+  },
+  "services": {
+    "label": "Nossa Expertise",
+    "title": "Serviços que Impulsionam",
+    "web": {
+      "title": "Desenvolvimento de Sistemas Web",
+      "desc": "Interfaces responsivas e robustas construídas com as tecnologias mais modernas do mercado."
+    },
+    "mobile": {
+      "title": "Criação de Aplicativos Mobile",
+      "desc": "Experiências nativas e híbridas de alta performance para Android e iOS."
+    },
+    "platforms": {
+      "title": "Plataformas de Gestão Personalizadas",
+      "desc": "ERP, CRM e dashboards customizados para as necessidades específicas do seu fluxo de trabalho."
+    },
+    "maintenance": {
+      "title": "Manutenção e Suporte Técnico",
+      "desc": "Garantia de estabilidade, segurança e evolução contínua para seus produtos digitais."
+    },
+    "consulting": {
+      "title": "Consultoria em Tecnologia",
+      "desc": "Orientação estratégica para escolha de stacks, arquitetura e transformação digital."
+    },
+    "cta": {
+      "title": "Pronto para começar?",
+      "desc": "Deixe-nos cuidar da tecnologia enquanto você foca no seu crescimento.",
+      "button": "Solicitar Orçamento"
+    }
+  },
+  "physis": {
+    "label": "Produto em Destaque",
+    "title": "Physis: Sistema de Gestão para Studios",
+    "desc": "Uma plataforma completa para gestão administrativa, financeira e de agendamentos para estúdios e clínicas. Modernize sua operação com dashboards inteligentes e controle total.",
+    "item1": "Gestão de Alunos e Pacientes",
+    "item2": "Agenda Inteligente e Dashboards",
+    "item3": "Controle Financeiro Integrado",
+    "button": "Saiba Mais sobre Physis"
+  },
+  "contact": {
+    "label": "Por que a CTN Dev BR?",
+    "title": "Tecnologia que impulsiona sua visão ao próximo nível.",
+    "desc": "Combinamos agilidade técnica com visão estratégica para entregar produtos digitais que não apenas funcionam, mas transformam mercados.",
+    "ctaButton": "Iniciar um Projeto",
+    "leadLabel": "Fale direto com o lead:",
+    "feature1": {
+      "title": "Entrega Ágil",
+      "desc": "Processos otimizados para colocar seu produto no mercado no menor tempo possível."
+    },
+    "feature2": {
+      "title": "Código Seguro",
+      "desc": "Arquitetura robusta com foco total na segurança dos seus dados e dos seus usuários."
+    },
+    "feature3": {
+      "title": "Time Dedicado",
+      "desc": "Especialistas que mergulham no seu negócio para entender cada necessidade real."
+    },
+    "feature4": {
+      "title": "Escalabilidade",
+      "desc": "Sistemas preparados para crescer junto com a demanda do seu sucesso."
+    }
+  },
+  "form": {
+    "nameLabel": "Nome",
+    "namePlaceholder": "Seu nome",
+    "emailLabel": "E-mail",
+    "emailPlaceholder": "seu@email.com",
+    "subjectLabel": "Assunto",
+    "subjectOption1": "Novo Projeto",
+    "subjectOption2": "Manutenção de Sistema",
+    "subjectOption3": "Consultoria",
+    "subjectOption4": "Outros",
+    "messageLabel": "Mensagem",
+    "messagePlaceholder": "Como podemos ajudar?",
+    "submit": "Enviar Mensagem"
+  }
+}

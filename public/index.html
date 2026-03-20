@@ -1,143 +1,558 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+
+<html class="scroll-smooth" lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CTN Dev BR</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title id="page-title" data-i18n="meta.title">CTN Dev BR | Soluções em Tecnologia</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <!-- SEO Meta Tags -->
+    <meta id="meta-description" name="description"
+        content="CTN Dev BR - Desenvolvimento de sistemas, aplicativos e plataformas de gestão. Soluções tecnológicas eficientes para empresas.">
+    <meta name="keywords" content="desenvolvimento de sistemas, aplicativos, gestão, tecnologia, software, CTN Dev BR">
+    <meta name="author" content="CTN Dev BR">
+    <meta property="og:title" content="CTN Dev BR">
+    <meta id="meta-og-description" property="og:description"
+        content="Desenvolvimento de sistemas, aplicativos e plataformas de gestão com foco em resultado.">
+    <meta property="og:image" content="logo-og.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ctndev.com.br">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-container-lowest": "#ffffff",
+                        "secondary-container": "#e4e2e1",
+                        "on-surface-variant": "#3d4a3e",
+                        "on-primary-fixed-variant": "#005228",
+                        "surface-container-high": "#eae8e7",
+                        "on-secondary-fixed-variant": "#474747",
+                        "on-primary": "#ffffff",
+                        "inverse-surface": "#303030",
+                        "outline": "#6c7b6d",
+                        "on-tertiary-container": "#00502b",
+                        "on-primary-container": "#005027",
+                        "outline-variant": "#bbcbbb",
+                        "tertiary": "#0b6d3d",
+                        "primary": "#006d37",
+                        "secondary": "#5f5e5e",
+                        "surface-container-low": "#f6f3f2",
+                        "surface-dim": "#dcd9d9",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed": "#9ef5b9",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "on-surface": "#1b1c1c",
+                        "primary-fixed-dim": "#4ae183",
+                        "on-error": "#ffffff",
+                        "on-tertiary-fixed-variant": "#00522c",
+                        "inverse-on-surface": "#f3f0f0",
+                        "error-container": "#ffdad6",
+                        "surface-variant": "#e4e2e1",
+                        "on-secondary-container": "#656464",
+                        "inverse-primary": "#4ae183",
+                        "background": "#fbf9f8",
+                        "tertiary-fixed-dim": "#83d99e",
+                        "on-tertiary-fixed": "#00210e",
+                        "primary-container": "#2ecc71",
+                        "on-primary-fixed": "#00210c",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed-dim": "#c8c6c6",
+                        "surface-container-highest": "#e4e2e1",
+                        "primary-fixed": "#6bfe9c",
+                        "secondary-fixed": "#e4e2e1",
+                        "surface-tint": "#006d37",
+                        "surface-container": "#f0eded",
+                        "on-tertiary": "#ffffff",
+                        "on-background": "#1b1c1c",
+                        "error": "#ba1a1a",
+                        "surface-bright": "#fbf9f8",
+                        "tertiary-container": "#6fc48c",
+                        "surface": "#fbf9f8"
+                    },
+                    fontFamily: {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "1.5rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
 
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="CTN Dev BR - Desenvolvimento de sistemas, aplicativos e plataformas de gestão. Soluções tecnológicas eficientes para empresas.">
-  <meta name="keywords" content="desenvolvimento de sistemas, aplicativos, gestão, tecnologia, software, CTN Dev BR">
-  <meta name="author" content="CTN Dev BR">
-  <meta property="og:title" content="CTN Dev BR">
-  <meta property="og:description" content="Desenvolvimento de sistemas, aplicativos e plataformas de gestão com foco em resultado.">
-  <meta property="og:image" content="logo-og.png">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.ctndev.com.br">
+        .signature-gradient {
+            background: linear-gradient(135deg, #006d37 0%, #2ecc71 100%);
+        }
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
+        .glass-nav {
+            background: rgba(251, 249, 248, 0.8);
+            backdrop-filter: blur(20px);
+        }
 
-    body {
-      background-color: #f9f9f9;
-      color: #333;
-    }
+        .lang-link {
+            color: #5f5e5e;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            transition: color .2s ease;
+        }
 
-    header {
-      background-color: #006839;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
+        .lang-link:hover {
+            color: #006d37;
+        }
 
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    .hero {
-      text-align: center;
-      padding: 60px 20px;
-      background-color: #e6e6e6;
-    }
-
-    .hero h1 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-      color: #006839;
-    }
-
-    .services ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .services li {
-      background-color: #fff;
-      padding: 15px;
-      margin: 10px 0;
-      border-left: 5px solid #006838;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .whatsapp-button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #25D366;
-      color: white;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .whatsapp-button:hover {
-      background-color: #1ebc57;
-    }
-
-    footer {
-      background-color: #006839;
-      color: #ccc;
-      text-align: center;
-      padding: 20px;
-    }
-
-    .logo {
-      display: block;
-      margin: 0 auto 30px auto;
-      width: 120px;
-      height: auto;
-    }
-  </style>
+        .lang-link.active {
+            color: #006d37;
+            text-decoration: underline;
+            text-underline-offset: 0.35rem;
+        }
+    </style>
 </head>
-<body>
-  <header>
-    <h1>CTN Dev BR</h1>
-  </header>
 
-  <section class="hero">
-    <h1>Solu&ccedil;&otilde;es em Tecnologia para seu Neg&oacute;cio</h1>
-    <p>Desenvolvimento de sistemas, aplicativos e gest&atilde;o com foco em resultado.</p>
-  </section>
+<body
+    class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+    <!-- TopNavBar -->
+    <nav class="fixed top-0 w-full z-50 glass-nav">
+        <div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+            <a class="text-2xl font-black tracking-tighter text-emerald-900" href="#">CTN Dev BR</a>
+            <div class="hidden md:flex items-center gap-8">
+                <a class="font-inter tracking-tight font-medium text-sm text-zinc-600 hover:text-emerald-600 transition-colors duration-300"
+                    href="#home" data-i18n="nav.home">Home</a>
+                <a class="font-inter tracking-tight font-medium text-sm text-zinc-600 hover:text-emerald-600 transition-colors duration-300"
+                    href="#services" data-i18n="nav.services">Services</a>
+                <a class="font-inter tracking-tight font-bold text-sm text-emerald-700 border-b-2 border-emerald-600 transition-colors duration-300"
+                    href="#physis" data-i18n="nav.physis">Physis</a>
+                <a class="font-inter tracking-tight font-medium text-sm text-zinc-600 hover:text-emerald-600 transition-colors duration-300"
+                    href="#contact" data-i18n="nav.contact">Contact</a>
+            </div>
+            <div class="flex items-center gap-4 md:gap-6">
+                <div class="flex items-center gap-2">
+                    <a class="lang-link active" href="#" id="lang-ptbr" data-lang="pt-BR" data-i18n="lang.ptbr">PTBr</a>
+                    <span class="text-zinc-400 text-xs">|</span>
+                    <a class="lang-link" href="#" id="lang-en" data-lang="en" data-i18n="lang.en">EN</a>
+                </div>
+                <a class="hidden md:inline-flex signature-gradient text-on-primary px-6 py-2.5 rounded-full font-bold text-sm transition-all hover:opacity-90 active:scale-95"
+                    href="https://wa.me/5561991829742" target="_blank" rel="noopener noreferrer" data-i18n="nav.talk">
+                    Let's Talk
+                </a>
+            </div>
+        </div>
+    </nav>
+    <main class="pt-20">
+        <!-- Hero Section -->
+        <section class="relative overflow-hidden px-8 pt-24 pb-32 md:pt-40 md:pb-52" id="home">
+            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 z-10">
+                    <h1 class="text-5xl md:text-7xl font-black tracking-tight text-on-background leading-[1.1] mb-8" data-i18n-html="hero.title">
+                        Soluções em Tecnologia para seu <span class="text-primary">Negócio</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-on-surface-variant max-w-2xl mb-12 leading-relaxed" data-i18n="hero.subtitle">
+                        Desenvolvimento de sistemas, aplicativos e gestão com foco em resultado. Transformamos
+                        complexidade em simplicidade digital.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a class="signature-gradient text-on-primary px-10 py-5 rounded-xl font-bold text-lg shadow-xl shadow-primary/10 hover:opacity-90 transition-all text-center"
+                            href="https://wa.me/5561991829742" target="_blank" rel="noopener noreferrer" data-i18n="hero.ctaPrimary">
+                            Vamos conversar
+                        </a>
+                        <a class="bg-surface-container-highest text-primary px-10 py-5 rounded-xl font-bold text-lg hover:bg-surface-container-high transition-all text-center"
+                            href="https://wa.me/5561991829742" target="_blank" rel="noopener noreferrer" data-i18n="hero.ctaSecondary">
+                            Conhecer Physis
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:col-span-5 relative">
+                    <div class="absolute -top-20 -right-20 w-80 h-80 bg-primary-container/20 rounded-full blur-3xl">
+                    </div>
+                    <div
+                        class="relative bg-surface-container-low rounded-[2rem] p-4 aspect-square flex items-center justify-center border border-outline-variant/10">
+                        <div
+                            class="w-full h-full rounded-[1.5rem] overflow-hidden signature-gradient opacity-10 absolute inset-4">
+                        </div>
+                        <div class="relative z-10 flex flex-col gap-4 w-full px-8">
+                            <div
+                                class="bg-surface-container-lowest p-6 rounded-xl shadow-sm transform -rotate-3 hover:rotate-0 transition-transform">
+                                <span class="material-symbols-outlined text-primary text-4xl mb-4">terminal</span>
+                                <div class="h-2 w-24 bg-surface-container-high rounded-full mb-2"></div>
+                                <div class="h-2 w-16 bg-surface-container-high rounded-full"></div>
+                            </div>
+                            <div
+                                class="bg-surface-container-lowest p-6 rounded-xl shadow-sm self-end w-2/3 transform rotate-2 hover:rotate-0 transition-transform">
+                                <span
+                                    class="material-symbols-outlined text-primary-container text-4xl mb-4">smartphone</span>
+                                <div class="h-2 w-20 bg-surface-container-high rounded-full"></div>
+                            </div>
+                            <div
+                                class="bg-surface-container-lowest p-6 rounded-xl shadow-sm transform -rotate-1 hover:rotate-0 transition-transform">
+                                <span class="material-symbols-outlined text-tertiary text-4xl mb-4">analytics</span>
+                                <div class="h-2 w-32 bg-surface-container-high rounded-full"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section -->
+        <section class="bg-surface-container-low py-32 px-8" id="about">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                    <div>
+                        <label class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block" data-i18n="about.label">A
+                            Empresa</label>
+                        <h2 class="text-4xl md:text-5xl font-black tracking-tight mb-8" data-i18n="about.title">Sobre a CTN Dev BR</h2>
+                        <div class="space-y-6 text-on-surface-variant text-lg leading-relaxed">
+                            <p data-i18n="about.p1">Somos especialistas em desenvolvimento e manutenção de sistemas, aplicativos e
+                                plataformas de gestão.</p>
+                            <p data-i18n="about.p2">Nossa missão é oferecer soluções tecnológicas eficientes e personalizadas para alavancar
+                                o seu negócio, unindo design estratégico e engenharia de ponta.</p>
+                        </div>
+                        <div class="mt-12 flex items-center gap-6">
+                            <div class="flex flex-col">
+                                <span class="text-3xl font-black text-primary">100%</span>
+                                <span
+                                    class="text-xs uppercase tracking-widest font-bold opacity-60" data-i18n="about.stat1">Personalizado</span>
+                            </div>
+                            <div class="w-px h-10 bg-outline-variant/30"></div>
+                            <div class="flex flex-col">
+                                <span class="text-3xl font-black text-primary">24/7</span>
+                                <span class="text-xs uppercase tracking-widest font-bold opacity-60" data-i18n="about.stat2">Suporte</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="space-y-4">
+                            <div class="h-64 bg-surface-container-highest rounded-xl overflow-hidden">
+                                <img alt="Equipe de desenvolvedores trabalhando"
+                                    class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuD67ugXbQ3ItGKXOmLIrsIevQ0nB46ed1W4hd0vCJBuQyV72Y1N54fTN-JpsLVZ8PpmeovohZwo0sXlLTcp_ksUaQMfY4o1DQtdFRI3ac-WEB2TnQ5XH4ud5BRAjf5Xlvik9QVpoKE8XGlD7nZ3Nu2zpIjrilSXPHv7wgf4Nhu0QLNAe93Oco3OPVlApZPDCo9gv4raxz8neqEyA0cWnZ3ZRI6d332GhmR7yZWH2EDv5B27bA0oKS10c-uU6I9HHG9-x7R-QhQDLEp5" />
+                            </div>
+                            <div class="h-40 bg-primary rounded-xl flex items-center justify-center p-8">
+                                <span class="text-on-primary font-black text-xl leading-tight" data-i18n="about.card1">Inovação em cada linha de
+                                    código</span>
+                            </div>
+                        </div>
+                        <div class="space-y-4 pt-12">
+                            <div class="h-40 bg-primary-container rounded-xl flex items-center justify-center p-8">
+                                <span class="text-on-primary-container font-black text-xl leading-tight" data-i18n="about.card2">Foco em
+                                    Resultados Reais</span>
+                            </div>
+                            <div class="h-64 bg-surface-container-highest rounded-xl overflow-hidden">
+                                <img alt="Dashboard de dados"
+                                    class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDQ-LkJcfkScy0oKNWtooo3q8J0cgkPi1M-KTsw-sH7lXwb29MC_KdJBbvEqJ0dXNy3Fs4PTcZ6jkwTN5xboabhwLRbJNuKQ8zHDEy6vO1Gsi6rhD1ccZNOvFOrsJUTYaFCFEwfvd6M_RvzbLW6T6LUkq65QVvmKK3c_v8CHofcxSUc-PtPDn4NrcQH6ARV8S7UwlWuu7jLeZ1H-UEk1S6TcVaH968D1vcFM5eiGn9oSr2cCS6LuZM9ki4hztG7s-rAXb5-7ZTYhww" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services Section -->
+        <section class="py-32 px-8 bg-background" id="services">
+            <div class="max-w-7xl mx-auto">
+                <div class="mb-20">
+                    <label class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block" data-i18n="services.label">Nossa
+                        Expertise</label>
+                    <h2 class="text-4xl md:text-5xl font-black tracking-tight" data-i18n="services.title">Serviços que Impulsionam</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Web Dev -->
+                    <div
+                        class="group bg-surface-container-low p-10 rounded-xl hover:bg-surface-container-lowest transition-all hover:shadow-2xl hover:shadow-primary/5">
+                        <div
+                            class="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-primary text-3xl">language</span>
+                        </div>
+                        <h3 class="text-2xl font-black mb-4" data-i18n="services.web.title">Desenvolvimento de Sistemas Web</h3>
+                        <p class="text-on-surface-variant leading-relaxed" data-i18n="services.web.desc">Interfaces responsivas e robustas construídas
+                            com as tecnologias mais modernas do mercado.</p>
+                    </div>
+                    <!-- Mobile App -->
+                    <div
+                        class="group bg-surface-container-low p-10 rounded-xl hover:bg-surface-container-lowest transition-all hover:shadow-2xl hover:shadow-primary/5">
+                        <div
+                            class="w-16 h-16 rounded-xl bg-primary-container/20 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-on-primary-container text-3xl">smartphone</span>
+                        </div>
+                        <h3 class="text-2xl font-black mb-4" data-i18n="services.mobile.title">Criação de Aplicativos Mobile</h3>
+                        <p class="text-on-surface-variant leading-relaxed" data-i18n="services.mobile.desc">Experiências nativas e híbridas de alta
+                            performance para Android e iOS.</p>
+                    </div>
+                    <!-- Management Platforms -->
+                    <div
+                        class="group bg-surface-container-low p-10 rounded-xl hover:bg-surface-container-lowest transition-all hover:shadow-2xl hover:shadow-primary/5">
+                        <div
+                            class="w-16 h-16 rounded-xl bg-tertiary/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-tertiary text-3xl">settings_suggest</span>
+                        </div>
+                        <h3 class="text-2xl font-black mb-4" data-i18n="services.platforms.title">Plataformas de Gestão Personalizadas</h3>
+                        <p class="text-on-surface-variant leading-relaxed" data-i18n="services.platforms.desc">ERP, CRM e dashboards customizados para as
+                            necessidades específicas do seu fluxo de trabalho.</p>
+                    </div>
+                    <!-- Maintenance -->
+                    <div
+                        class="group bg-surface-container-low p-10 rounded-xl hover:bg-surface-container-lowest transition-all hover:shadow-2xl hover:shadow-primary/5">
+                        <div
+                            class="w-16 h-16 rounded-xl bg-outline/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+                            <span class="material-symbols-outlined text-outline text-3xl">handyman</span>
+                        </div>
+                        <h3 class="text-2xl font-black mb-4" data-i18n="services.maintenance.title">Manutenção e Suporte Técnico</h3>
+                        <p class="text-on-surface-variant leading-relaxed" data-i18n="services.maintenance.desc">Garantia de estabilidade, segurança e
+                            evolução contínua para seus produtos digitais.</p>
+                    </div>
+                    <!-- Consulting -->
+                    <div
+                        class="group bg-surface-container-low p-10 rounded-xl hover:bg-surface-container-lowest transition-all hover:shadow-2xl hover:shadow-primary/5">
+                        <div
+                            class="w-16 h-16 rounded-xl bg-secondary-container flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+                            <span
+                                class="material-symbols-outlined text-on-secondary-container text-3xl">lightbulb</span>
+                        </div>
+                        <h3 class="text-2xl font-black mb-4" data-i18n="services.consulting.title">Consultoria em Tecnologia</h3>
+                        <p class="text-on-surface-variant leading-relaxed" data-i18n="services.consulting.desc">Orientação estratégica para escolha de
+                            stacks, arquitetura e transformação digital.</p>
+                    </div>
+                    <!-- Featured CTA -->
+                    <div class="signature-gradient p-10 rounded-xl flex flex-col justify-between">
+                        <div class="text-on-primary">
+                            <h3 class="text-2xl font-black mb-4" data-i18n="services.cta.title">Pronto para começar?</h3>
+                            <p class="opacity-90 leading-relaxed" data-i18n="services.cta.desc">Deixe-nos cuidar da tecnologia enquanto você foca no
+                                seu crescimento.</p>
+                        </div>
+                        <a class="mt-8 bg-surface-container-lowest text-primary py-4 px-6 rounded-xl font-bold text-center hover:bg-opacity-90 transition-all"
+                            href="https://wa.me/5561991829742" target="_blank" rel="noopener noreferrer" data-i18n="services.cta.button">
+                            Solicitar Orçamento
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Physis Product Section -->
+        <section class="py-32 px-8 bg-surface-container-lowest" id="physis">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div class="order-2 lg:order-1">
+                        <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                            <img alt="Physis Dashboard Interface" class="w-full h-auto object-cover"
+                                src="https://lh3.googleusercontent.com/aida/ADBb0uhXSv3sUf62QR3nGBBnz5S7rwzIO3XcNDB1y1qi1gf_G52PAF00MzN-hb84hGKk1m_YNfyfcNZj1qg2vxarMKeATIBiEMusOUlK1pXT9dMPFwYOEbrHQg45qjFqkRuaetxAm31l42OZo5WS0Nv4zA5LZ9zX-_ArdDss4dQBiEi_drQIX8_a0FxOs2jABADGHjJZFQs5pFUU-jqdQbCytnHlg0Cfc03VmiBG9QjpJWauoEEFKDRoCS8XS2nh0liD10v3QErVNvJcaw" />
+                        </div>
+                    </div>
+                    <div class="order-1 lg:order-2">
+                        <label class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block" data-i18n="physis.label">Produto em
+                            Destaque</label>
+                        <h2 class="text-4xl md:text-5xl font-black tracking-tight mb-8" data-i18n="physis.title">Physis: Sistema de Gestão para
+                            Studios</h2>
+                        <p class="text-lg text-on-surface-variant mb-10 leading-relaxed" data-i18n="physis.desc">
+                            Uma plataforma completa para gestão administrativa, financeira e de agendamentos para
+                            estúdios e clínicas. Modernize sua operação com dashboards inteligentes e controle total.
+                        </p>
+                        <ul class="space-y-4 mb-10">
+                            <li class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary">check_circle</span>
+                                <span class="font-medium text-on-surface" data-i18n="physis.item1">Gestão de Alunos e Pacientes</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary">check_circle</span>
+                                <span class="font-medium text-on-surface" data-i18n="physis.item2">Agenda Inteligente e Dashboards</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <span class="material-symbols-outlined text-primary">check_circle</span>
+                                <span class="font-medium text-on-surface" data-i18n="physis.item3">Controle Financeiro Integrado</span>
+                            </li>
+                        </ul>
+                        <a class="signature-gradient text-on-primary px-10 py-5 rounded-xl font-bold text-lg shadow-xl shadow-primary/10 hover:opacity-90 transition-all inline-block"
+                            href="https://ctn.dev.br/physis" target="_blank" rel="noopener noreferrer" data-i18n="physis.button">
+                            Saiba Mais sobre Physis
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section class="py-32 px-8 bg-surface-container-low" id="contact">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <label class="text-primary font-bold tracking-widest uppercase text-sm mb-4 block" data-i18n="contact.label">Por que a CTN Dev BR?</label>
+                        <h2 class="text-4xl md:text-6xl font-black tracking-tight mb-8 leading-tight" data-i18n="contact.title">Tecnologia que impulsiona sua visão ao próximo nível.</h2>
+                        <p class="text-xl text-on-surface-variant mb-12 leading-relaxed" data-i18n="contact.desc">Combinamos agilidade técnica com visão estratégica para entregar produtos digitais que não apenas funcionam, mas transformam mercados.</p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a class="signature-gradient text-on-primary px-10 py-5 rounded-xl font-bold text-lg shadow-xl shadow-primary/20 hover:scale-[1.02] transition-all text-center"
+                                href="https://wa.me/5561991829742" target="_blank" rel="noopener noreferrer" data-i18n="contact.ctaButton">
+                                Iniciar um Projeto
+                            </a>
+                            <div class="flex flex-col justify-center px-4">
+                                <span class="text-sm font-bold text-on-surface-variant" data-i18n="contact.leadLabel">Fale direto com o lead:</span>
+                                <span class="text-primary font-black">(61) 9 9182-9742</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/10">
+                            <span class="material-symbols-outlined text-primary text-4xl mb-4">bolt</span>
+                            <h4 class="text-xl font-black mb-2" data-i18n="contact.feature1.title">Entrega Ágil</h4>
+                            <p class="text-on-surface-variant text-sm leading-relaxed" data-i18n="contact.feature1.desc">Processos otimizados para colocar seu produto no mercado no menor tempo possível.</p>
+                        </div>
+                        <div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/10">
+                            <span class="material-symbols-outlined text-primary text-4xl mb-4">security</span>
+                            <h4 class="text-xl font-black mb-2" data-i18n="contact.feature2.title">Código Seguro</h4>
+                            <p class="text-on-surface-variant text-sm leading-relaxed" data-i18n="contact.feature2.desc">Arquitetura robusta com foco total na segurança dos seus dados e dos seus usuários.</p>
+                        </div>
+                        <div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/10">
+                            <span class="material-symbols-outlined text-primary text-4xl mb-4">groups</span>
+                            <h4 class="text-xl font-black mb-2" data-i18n="contact.feature3.title">Time Dedicado</h4>
+                            <p class="text-on-surface-variant text-sm leading-relaxed" data-i18n="contact.feature3.desc">Especialistas que mergulham no seu negócio para entender cada necessidade real.</p>
+                        </div>
+                        <div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/10">
+                            <span class="material-symbols-outlined text-primary text-4xl mb-4">trending_up</span>
+                            <h4 class="text-xl font-black mb-2" data-i18n="contact.feature4.title">Escalabilidade</h4>
+                            <p class="text-on-surface-variant text-sm leading-relaxed" data-i18n="contact.feature4.desc">Sistemas preparados para crescer junto com a demanda do seu sucesso.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-zinc-100 py-12 px-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-zinc-500 font-inter text-xs uppercase tracking-widest text-center md:text-left">
+                © <span class="current-year"></span> CTN Dev BR. yuri@ctn.dev.br | (61) 9 9182-9742
+            </div>
+        </div>
+    </footer>
 
-  <section id="sobre">
-    <img class="logo" src="images/logo.png" alt="Logo CTN Dev">
-    <h2>Sobre a CTN Dev BR</h2>
-    <p>Somos especialistas em desenvolvimento e manuten&ccedil;&atilde;o de sistemas, aplicativos e plataformas de gest&atilde;o. Nossa miss&atilde;o &eacute; oferecer solu&ccedil;&otilde;es tecnol&oacute;gicas eficientes e personalizadas para alavancar o seu neg&oacute;cio.</p>
-  </section>
+    <script src="./i18n/pt-BR.js"></script>
+    <script src="./i18n/en.js"></script>
+    <script>
+        (function () {
+            const STORAGE_KEY = 'ctndev.language';
+            const SUPPORTED = ['pt-BR', 'en'];
 
-  <section id="servicos" class="services">
-    <h2>Servi&ccedil;os</h2>
-    <ul>
-      <li>Desenvolvimento de Sistemas Web</li>
-      <li>Cria&ccedil;&atilde;o de Aplicativos Mobile (Android / iOS)</li>
-      <li>Plataformas de Gest&atilde;o Personalizadas</li>
-      <li>Manuten&ccedil;&atilde;o e Suporte T&eacute;cnico</li>
-      <li>Consultoria em Tecnologia</li>
-    </ul>
-  </section>
+            const getNestedValue = (obj, path) => path.split('.').reduce((acc, key) => (acc && acc[key] !== undefined ? acc[key] : undefined), obj);
 
-  <section id="contato">
-    <h2>Fale Conosco</h2>
-    <p>Email: yuri@ctn.dev.br</p>
-    <p>Telefone: (61) 9 9182-9742</p>
-    <a class="whatsapp-button" href="https://wa.me/5561991829742" target="_blank" rel="noopener noreferrer">
-      Fale via WhatsApp
-    </a>
-  </section>
+            const applyTranslations = (messages) => {
+                document.querySelectorAll('[data-i18n]').forEach((el) => {
+                    const key = el.getAttribute('data-i18n');
+                    const value = getNestedValue(messages, key);
+                    if (value === undefined) return;
 
-  <footer>
-    <p>&copy; 2025 CTN Dev BR - Todos os direitos reservados.</p>
-  </footer>
+                    if (el.tagName === 'TITLE') {
+                        document.title = value;
+                    } else {
+                        el.textContent = value;
+                    }
+                });
+
+                document.querySelectorAll('[data-i18n-html]').forEach((el) => {
+                    const key = el.getAttribute('data-i18n-html');
+                    const value = getNestedValue(messages, key);
+                    if (value !== undefined) {
+                        el.innerHTML = value;
+                    }
+                });
+
+                document.querySelectorAll('[data-i18n-placeholder]').forEach((el) => {
+                    const key = el.getAttribute('data-i18n-placeholder');
+                    const value = getNestedValue(messages, key);
+                    if (value !== undefined) {
+                        el.setAttribute('placeholder', value);
+                    }
+                });
+
+                const metaDescription = document.getElementById('meta-description');
+                const ogDescription = document.getElementById('meta-og-description');
+                const metaDescValue = getNestedValue(messages, 'meta.description');
+                const ogDescValue = getNestedValue(messages, 'meta.ogDescription');
+
+                if (metaDescription && metaDescValue) {
+                    metaDescription.setAttribute('content', metaDescValue);
+                }
+
+                if (ogDescription && ogDescValue) {
+                    ogDescription.setAttribute('content', ogDescValue);
+                }
+            };
+
+            const updateLanguageUI = (lang) => {
+                document.documentElement.lang = lang;
+
+                document.querySelectorAll('[data-lang]').forEach((link) => {
+                    const linkLang = link.getAttribute('data-lang');
+                    link.classList.toggle('active', linkLang === lang);
+                });
+            };
+
+            const getLocalMessages = (lang) => {
+                if (!window.__CTN_I18N__) return null;
+                return window.__CTN_I18N__[lang] || null;
+            };
+
+            const loadLanguage = async (lang) => {
+                const selectedLang = SUPPORTED.includes(lang) ? lang : 'pt-BR';
+
+                const localMessages = getLocalMessages(selectedLang);
+                if (location.protocol === 'file:' && localMessages) {
+                    applyTranslations(localMessages);
+                    updateLanguageUI(selectedLang);
+                    localStorage.setItem(STORAGE_KEY, selectedLang);
+                    return;
+                }
+
+                try {
+                    const response = await fetch(`./i18n/${selectedLang}.json`, { cache: 'no-cache' });
+                    if (!response.ok) {
+                        throw new Error('Falha ao carregar traduções');
+                    }
+
+                    const messages = await response.json();
+                    applyTranslations(messages);
+                    updateLanguageUI(selectedLang);
+                    localStorage.setItem(STORAGE_KEY, selectedLang);
+                } catch (error) {
+                    if (localMessages) {
+                        applyTranslations(localMessages);
+                        updateLanguageUI(selectedLang);
+                        localStorage.setItem(STORAGE_KEY, selectedLang);
+                        return;
+                    }
+
+                    if (selectedLang !== 'pt-BR') {
+                        await loadLanguage('pt-BR');
+                    }
+                }
+            };
+
+            document.querySelectorAll('[data-lang]').forEach((link) => {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    const selectedLang = link.getAttribute('data-lang') || 'pt-BR';
+                    loadLanguage(selectedLang);
+                });
+            });
+
+            document.querySelectorAll('.current-year').forEach((el) => {
+                el.textContent = String(new Date().getFullYear());
+            });
+
+            const savedLang = localStorage.getItem(STORAGE_KEY);
+            loadLanguage(savedLang || 'pt-BR');
+        })();
+    </script>
 </body>
+
 </html>
