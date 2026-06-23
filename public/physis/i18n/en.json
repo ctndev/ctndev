@@ -1,6 +1,7 @@
 {
   "meta": {
-    "title": "Physis - Studio Management | CTN Dev BR"
+    "title": "Physis | System for Pilates and Physiotherapy",
+    "description": "Complete system for pilates studios and physiotherapy clinics. Scheduling, finances, student app, Wellhub integration and exclusive branded app option."
   },
   "lang": {
     "ptbr": "PTBr",
@@ -8,45 +9,86 @@
   },
   "nav": {
     "home": "Home",
-    "features": "Features",
+    "benefits": "Benefits",
     "studentApp": "Student App",
+    "whiteLabel": "Digital Platform",
+    "plans": "Plans",
     "support": "Support",
     "demoBtn": "Schedule Demo"
   },
   "hero": {
-    "badge": "SPECIALIZED MANAGEMENT SYSTEM",
-    "title": "Physis: <span class=\"text-primary\">Efficiency</span> that creates <span class=\"text-primary\">Freedom</span>",
-    "desc": "Manage your studio efficiently and gain the time freedom you deserve. The complete digital architecture to elevate your business.",
-    "ctaPrimary": "Get Started",
-    "ctaSecondary": "Request Demo"
+    "badge": "+6 years in real operation",
+    "title": "System for Pilates Studios and Physiotherapy Clinics",
+    "desc": "Reduce no-shows, automate scheduling, organize finances and offer your students a complete app with your brand.",
+    "cta": "Request Demo",
+    "trust1": "Used continuously for over 6 years in real operation",
+    "trust2": "Student app",
+    "trust3": "Wellhub/Gympass integration",
+    "trust4": "Humanized support",
+    "trust5": "Exclusive branded app option for your studio",
+    "seal": "+6 years in real operation"
   },
-  "time": {
-    "title": "Real <span class=\"text-primary\">Time Savings</span>",
-    "desc": "We automate bureaucratic tasks so you can focus on what really matters: your students.",
-    "card1": {
-      "title": "Operational Agility",
-      "desc": "Reduce by up to 70% the time spent on scheduling and manual billing."
-    },
-    "card2": {
-      "title": "Simplified Routine",
-      "desc": "Fast access to all critical information in just a few clicks, from anywhere."
-    }
+  "benefits": {
+    "title": "Why do studios choose Physis?",
+    "desc": "Everything you need to manage your studio in one place.",
+    "card1": "Reduce no-shows and cancellations through the app.",
+    "card2": "Organize your schedule without depending on WhatsApp.",
+    "card3": "Control payments and track revenue easily.",
+    "card4": "Centralize student and patient information.",
+    "card5": "Automate repetitive administrative tasks.",
+    "card6": "Offer a modern experience for your students.",
+    "card7": "Wellhub/Gympass integration.",
+    "card8": "Humanized support when you need it."
+  },
+  "socialProof": {
+    "title": "Validated in real operation",
+    "desc": "Physis is not an idea or an early-stage project. The system has been used continuously for over 6 years in a real health and wellness operation, supporting scheduling, students, finances and service management.",
+    "badge": "+6 years of continuous use"
+  },
+  "testimonials": {
+    "name": "Maria Silva",
+    "role": "Owner — Studio Exemplo Pilates",
+    "quote": "\"Physis transformed how we manage our studio. Our students love the app and no-shows have decreased significantly.\""
+  },
+  "beforeAfter": {
+    "title": "Move beyond WhatsApp management",
+    "beforeTitle": "BEFORE",
+    "afterTitle": "WITH PHYSIS",
+    "before1": "Manual scheduling",
+    "before2": "Scattered information",
+    "before3": "Disorganized billing",
+    "before4": "Difficulty tracking students",
+    "before5": "Too much operational work",
+    "after1": "Centralized schedule",
+    "after2": "Student app",
+    "after3": "Integrated financial control",
+    "after4": "Complete session management",
+    "after5": "More time to focus on business growth"
   },
   "studentApp": {
-    "badge": "CORE VALUE",
-    "title": "Your Studio in the <span class=\"text-primary-fixed\">Student's Pocket</span>",
-    "desc": "Our biggest strength is your client experience. A native, fast and intuitive app that builds loyalty and modernizes your brand.",
+    "badge": "STUDENT APP",
+    "title": "Your studio in the <span class=\"text-primary-fixed\">student's pocket</span>",
+    "desc": "Let your students schedule sessions, track activities and interact with your studio through a modern app.",
+    "impact": "While other studios rely only on WhatsApp, you offer a professional experience.",
     "card1": {
-      "title": "Scheduling in Seconds",
-      "desc": "Your students can book, cancel and reschedule classes without sending a single WhatsApp message."
+      "title": "Class booking",
+      "desc": "Students book and cancel classes in seconds, without messaging."
     },
     "card2": {
-      "title": "Financial Transparency",
-      "desc": "Tuition and invoice history always available for quick student access."
+      "title": "Attendance tracking",
+      "desc": "Track attendance and reduce no-shows with automatic notifications."
     },
     "card3": {
-      "title": "Push Engagement",
-      "desc": "Automatic reminders and updates that reduce absences and increase attendance."
+      "title": "Student communication",
+      "desc": "Keep students informed with notices and direct app notifications."
+    },
+    "card4": {
+      "title": "Activity history",
+      "desc": "Students view progress, assessments and session history."
+    },
+    "card5": {
+      "title": "Professional experience",
+      "desc": "A modern interface that conveys credibility and professionalism."
     },
     "store1": "App Store<br /><span class=\"text-white text-sm\">Available</span>",
     "store2": "Google Play<br /><span class=\"text-white text-sm\">Available</span>",
@@ -56,20 +98,124 @@
     "screen4": "Make-up Classes",
     "screen5": "My Invoices"
   },
-  "management": {
-    "title": "Management <span class=\"text-primary\">Engineering</span>",
-    "desc": "Features designed for your studio's maximum performance.",
+  "whiteLabel": {
+    "badge": "White Label Premium",
+    "title": "Your own app in the stores",
+    "desc": "Get an exclusive app with your studio's name, logo and visual identity.",
+    "standardTitle": "STANDARD VERSION",
+    "standard1": "Physis App",
+    "standard2": "Fast deployment",
+    "standard3": "Lower investment",
+    "premiumTitle": "PREMIUM VERSION",
+    "premium1": "Your studio name",
+    "premium2": "Your logo",
+    "premium3": "Your colors",
+    "premium4": "Published on App Store",
+    "premium5": "Published on Google Play",
+    "premium6": "Exclusive experience for your students",
+    "callout": "Your student downloads an app with your company name.",
+    "benefit1": "Strengthens your brand",
+    "benefit2": "Creates perception of professionalism",
+    "benefit3": "Builds student loyalty",
+    "benefit4": "Differentiates your studio from competitors",
+    "benefit5": "Keeps your business on the student's phone",
+    "mockup1": "Studio Exemplo Pilates",
+    "mockup2": "Clínica Exemplo Fisioterapia",
+    "impact": "While many studios depend only on WhatsApp, you offer your own app to your students.",
+    "seal": "Your Brand Digital Platform"
+  },
+  "condensed": {
+    "title": "Complete management in the <span class=\"text-primary\">palm of your hand</span>",
+    "desc": "Scheduling, finances and student records — all integrated in a responsive web system that evolves with partner feedback.",
     "card1": {
-      "title": "Smart Dashboard",
-      "desc": "Real-time 360° view. Performance and revenue indicators that support strategic decisions."
+      "title": "Dashboard and metrics",
+      "desc": "Complete real-time view of your business."
     },
     "card2": {
-      "title": "Dynamic Schedule",
-      "desc": "Full control of timetables and classes. Smart sync that eliminates scheduling conflicts."
+      "title": "Centralized schedule",
+      "desc": "Manage times, classes and sessions without conflicts."
     },
     "card3": {
-      "title": "Financial Management",
-      "desc": "Automatic entries, tuition control and detailed cash flow for your peace of mind."
+      "title": "Financial management",
+      "desc": "Tuition, cash flow and revenue organized."
+    },
+    "responsive": {
+      "title": "Access from any device",
+      "desc": "Manage your studio via browser on phone, tablet or computer."
+    },
+    "evolution": "Many of our best tools were born from direct suggestions from our partners. Your feedback shapes the future of Physis."
+  },
+  "digitalPlatform": {
+    "title": "Much more than a management system",
+    "subtitle": "Transform your studio into a complete digital brand.",
+    "intro": "With the Premium plan, you don't just get a management system.",
+    "intro2": "You get a complete digital platform with:",
+    "item1": "Web management system",
+    "item2": "Your own student app",
+    "item3": "Custom visual identity",
+    "item4": "App store publication",
+    "item5": "Constant presence on your clients' phones",
+    "highlight": "Your brand on the App Store and Google Play.",
+    "impact1": "Transform your brand into a digital experience.",
+    "impact2": "Be present on your students' phones every day."
+  },
+  "valueCompare": {
+    "title": "Build your own app or start today?",
+    "traditionalTitle": "Traditional development",
+    "traditional1": "High initial investment",
+    "traditional2": "Long project timeline",
+    "traditional3": "Development team required",
+    "traditional4": "Maintenance costs",
+    "traditional5": "Complex publication process",
+    "physisTitle": "Physis Premium",
+    "physis1": "Fast deployment",
+    "physis2": "Predictable investment",
+    "physis3": "App with your brand",
+    "physis4": "Continuous updates",
+    "physis5": "Specialized support",
+    "impact": "Strengthen your brand without building an app from scratch."
+  },
+  "plans": {
+    "title": "Choose the ideal plan for your studio",
+    "desc": "Start with a complete solution and grow as your business expands.",
+    "from": "Starting at",
+    "month": "/month",
+    "essential": {
+      "name": "Essential",
+      "tagline": "For those getting started.",
+      "feature1": "Scheduling",
+      "feature2": "Student records",
+      "feature3": "Basic financial control",
+      "feature4": "Shared app",
+      "feature5": "Support",
+      "price": "R$ 99.99",
+      "cta": "Request Demo"
+    },
+    "professional": {
+      "name": "Professional",
+      "tagline": "Recommended plan.",
+      "badge": "Recommended",
+      "feature1": "Everything in Essential",
+      "feature2": "Assessments",
+      "feature3": "Progress tracking",
+      "feature4": "Reports",
+      "feature5": "Wellhub/Gympass integration",
+      "price": "R$ 249.99",
+      "cta": "Request Demo"
+    },
+    "premium": {
+      "name": "Your Brand Digital Platform",
+      "tagline": "Complete digital ecosystem for your studio.",
+      "badge1": "Most chosen",
+      "badge2": "Own App",
+      "feature1": "Everything in Professional",
+      "feature2": "Exclusive studio app",
+      "feature3": "Custom name and logo",
+      "feature4": "Store publication",
+      "feature5": "Personalized training",
+      "feature6": "Priority support",
+      "price": "R$ 499.99",
+      "cta": "I Want My Digital Platform"
     }
   },
   "support": {
@@ -79,30 +225,9 @@
     "item2": "Fast and Assertive Response",
     "chip": "Your success is ours"
   },
-  "evolution": {
-    "badge": "CONTINUOUS EVOLUTION",
-    "title": "Your voice matters: <span class=\"text-primary\">Evolve with us</span>",
-    "desc": "We believe users know what the system needs. In Physis, you have an open channel to suggest improvements and new features.",
-    "quoteTitle": "Co-creation",
-    "quote": "\"Many of our best tools were born from direct partner suggestions. Propose improvements and see the system evolve to your specific needs.\""
-  },
-  "responsive": {
-    "chip": "Web Access",
-    "badge": "TOTAL MANAGEMENT",
-    "title": "<span class=\"text-primary\">100% Responsive</span> System",
-    "desc": "It's not just an app for students—it's full management power in your hand. Our web interface adapts perfectly to any device, delivering fluid experience without downloads for managers.",
-    "item1": {
-      "title": "Browser Access",
-      "desc": "Access via Chrome or Safari with the same account."
-    },
-    "item2": {
-      "title": "Total Sync",
-      "desc": "Data updated instantly across all devices."
-    }
-  },
   "integrations": {
-    "title": "Expand Your Reach with <span class=\"text-primary-fixed\">Integrations</span>",
-    "desc": "Connect your studio to major corporate wellness players. Physis integrates seamlessly to automate new student intake and simplify financial transfers.",
+    "title": "Expand your Reach with <span class=\"text-primary-fixed\">Integrations</span>",
+    "desc": "Connect your studio to the biggest players in corporate health. Physis integrates seamlessly to automate new student intake and simplify financial transfers.",
     "partner1": "Official Partner",
     "partner2": "Active Ecosystem",
     "card1": {
@@ -110,7 +235,7 @@
       "desc": "Instant sync with corporate platforms."
     },
     "card2": {
-      "title": "New Leads",
+      "title": "New leads",
       "desc": "Attract employees from major partner companies."
     },
     "card3": {
@@ -119,13 +244,13 @@
     },
     "card4": {
       "title": "Scalability",
-      "desc": "Increase occupancy rate without manual effort."
+      "desc": "Increase occupancy without manual effort."
     }
   },
   "cta": {
-    "title": "Ready for more time and management excellence?",
-    "desc": "Join hundreds of professionals who have already transformed their daily routine with Physis.",
-    "button1": "Start Free Now",
-    "button2": "Talk to a Consultant"
+    "title": "Ready to modernize your studio?",
+    "desc": "Discover Physis in a quick demo and learn how to simplify your business management.",
+    "button": "Schedule Demo",
+    "disclaimer": "No commitment."
   }
 }
